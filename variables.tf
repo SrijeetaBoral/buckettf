@@ -8,6 +8,11 @@ variable "project_id" {
   type        = string
 }
 
+variable "ami_ssm_parameter" {
+  description = "SSM public parameter name used to look up the latest Amazon Linux 2023 AMI"
+  type        = string
+}
+
 variable "state_bucket" {
   description = "S3 bucket name that stores the remote state"
   type        = string
